@@ -9,7 +9,8 @@ You can use this in your terraform template with the following steps.
     ```
     module "tf-instances" {
         source = "alibaba/ecs-instance/alicloud"
-
+        version = "0.0.1"
+        
         vswitch_id = "vsw-wqrw3c423"
         group_ids = ["sg-f2c2fwqvs"]
         private_ips = ["172.16.1.10", "172.16.1.20"]
